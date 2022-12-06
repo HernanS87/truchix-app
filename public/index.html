@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truchix</title>
+    <meta name="author" content="Hernán Santarelli">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section id="firstScreen">
+        <div class="modal">
+            <h1>TRUCHIX</h1>
+            <form action="" id="form">
+                <label for="player1">Jugador 1</label>
+                <input type="text" id="player1"     placeholder="Nombre" required>
+                <label for="player2">Jugador 2</label>
+                <input type="text" id="player2"     placeholder="Nombre" required>
+                <button>JUGAR!</button>
+            </form><br><br>
+            <div id="partidasViejas" class="dnone">
+                <h2>PARTIDAS VIEJAS</h2>
+            </div>
+        </div>
+    </section>
+    <section id="secondScreen" class="animation dnone">
+        <div class="modal">
+            <img src="images/animation2.gif" alt="">
+        </div>
+    </section>
+    <section id="thirdScreen" class="container-slider dnone">
+        <button id="closeSlider">X</button>
+        <button id="closeSliderViejo">X</button>
+        <div class="slider" id="slider"></div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+    </section>
+    <section id="fourthScreen" class="modal dnone">
+        <div id="btnContainerModal" class="modal">
+            <button id="seeResult">Ver Resultados</button>
+            <button id="tryAgain">Volver a tirar</button>
+        </div>
+    </section>
+    <section id="fifthScreen" class="results dnone">
+        <div class="modal">
+            <div id="playersResult"></div>
+            <div id="match"></div>
+            <div id="btnContainerResults">
+                <button id="exit">Salir</button>
+                <button id="save">Guardar</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script/mazo.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
